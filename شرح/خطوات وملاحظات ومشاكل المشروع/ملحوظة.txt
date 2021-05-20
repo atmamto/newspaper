@@ -1,0 +1,73 @@
+áÇÈÏ ãä ÊÛííÑ äæÚ ÚãæÏ ÇáÇí Ïí Çáì 
+Big increment
+ÏÇ ÇÎÑ ÎØæÉ áã íÊã ÊäÝíÐåÇ
+======================================
+áãÇ ÈäÚãá ÊÚÏí Úáì ÇáãÇíÌÑíÔä ÈÊÇÚ ÞÇÚÏÉ ÇáÈíÇäÇÊ
+äÞæã äÚãá 
+php artisan migrate:rollback
+æÈÚÏíä äÚãá
+php artisan migrate
+
+==============================
+ÚäÏ ÇÓÊÎÏÇã ÇáÝæÑã ÇáÎÇÕÉ ÈÇá 
+collective laravel
+{!! Form::open !!}
+íæÌÏ ÈÚÏ ÇáãÓÇÑÇÊ ÇáÊì ÊÎáÊáÝ ÊãÇãÇ Úä ÇáãÓÇÑÇÊ ÇáÚÇÏíÉ æåÐå ÇáãÓÇÑÇÊ ãæÌæÏÉ Ýì ÇáÇãÑ
+php artisan route:list
+
+ÍíË Çä 
+admin/admin
+åæ äÝÓå 
+admin.store
+ãËÇá 
+{!! Form::open(['url'=>'admin/admin']) !!}
+Çæ
+route ØÑíÞÉ Çá
+{!! Form::open(['route'=>'admin.store']) !!}
+æåí äÝÓ ÇáØÑíÞÉ 
+ÇáÏÑÓ ÑÞã 15
+==================================
+compacÇáÇÎÊÕÇÑ ÈÇÓÊÎÏÇã Çá 
+
+$admin = Admin::find($id);
+$title = trans('admin.edit');
+return view('admin.admins.edit', compact('admin', 'title'));
+
+åì äÝÓåÇ 
+
+$admin = Admin::find($id);
+        
+return view('admin.admins.edit', ['title'=>trans('admin.edit'),['edit'=>$admin]]);
+
+=====================================================================================
+ØÑíÞÉ ÇÎÊÕÇÑ ÇáßæÏ
+
+Route::get('lang/{lang}', function ($lang) {
+	if(session()->has('lang')){
+	session()->forget('lang', 'en');
+	}
+	if($lang == 'ar'){
+	session()->put('lang', 'ar');
+	}else{
+	session()->put('lang', 'en');
+	}
+	return back();
+});
+åæ äÝÓå ÏÇ
+
+Route::get('lang/{lang}', function ($lang) {
+	session()->has('lang')?session()->forget('lang'):'';
+	$lang == 'ar'?session()->put('lang', 'ar'):session()->put('lang', 'en');
+	return back();
+});
+====================================================================================
+æåí ÊÚäí Çäå Ýì ÍÇáÉ ÇáÓíÔä (Ç Ñ) åÇíßæä Çáäíã ÚÑÈí 
+else=> :
+åÇíßæä Çáäíã ÇäÌáíÒí
+session('lang') == 'ar'?$country_name_ar:$country_name_en
+===================================================
+ãÔßáÉ ÙåæÑ ÇáÊÇÌÇÊ Ýì ÇáÝÑæäÊ ÇäÏ
+{{substr($g->description,0,300)}}
+ÇáÍá ÇÖÇÝÉ ÚáÇãÉ ÇáÊÚÌÈ
+{!! substr($g->description,0,300) !!}
+=======

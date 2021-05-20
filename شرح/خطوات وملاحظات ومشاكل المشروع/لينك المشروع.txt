@@ -1,0 +1,38 @@
+áíäß ÇáãæŞÚ
+http://localhost/laravel2/public/
+====================================
+áíäß ÇáÇÏãä
+http://localhost/laravel2/public/admin
+==================================
+ÈáÇÌä íÓÊÎÏã áÅÏÇÑÉ ÇáãäÊÌÇÊ ÏÇÎá ÇáÇÏãä
+ÇáÏÑÓ ÑŞã 35
+https://www.jstree.com/
+==================================
+mail trap
+email : e11188888888@gmail.com
+pass : atmamto2020
+user : eslam elsayed
+áÚãá ÇßæäÊ áÇÓÊŞÈÇá ÇáÑÓÇÆá ãä ÇáãæŞÚ
+https://mailtrap.io/inboxes/746621/messages/1479468528
+==========================
+https://github.com/arabnewscms/EcommerceCourse/tree/master/lesson20
+===================================
+ÈáÇÌä áÌáÈ ÇáÌÏÇæá ÏÇÎá ÇáÇÏãä
+https://yajrabox.com/docs/laravel-datatables/master/buttons-installation
+======================================
+https://laravel.com/docs/7.x/migrations
+
+https://laravelcollective.com/
+===============================================
+ÈáÇÌä áÚãá Çá
+select
+https://select2.org/getting-started/basic-usage
+=====================================================
+ÇÖÇİÉ ÈáÇÌä áÇÖåÇÑ ÇáÊæÇÑíÌ ÚäÏ ÇÖÇİÉ ãäÊÌ
+https://cdnjs.com/libraries/bootstrap-datepicker
+=================================================
+
+íÓÊÎÏã áÇÖÇİÉ ÇáãæÇŞÚ
+ÎØæØ ÇáØæá longitude
+ÎØæØ ÇáÚÑÖ lititude
+https://github.com/Logicify/jquery-locationpicker-plugin

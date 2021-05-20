@@ -1,0 +1,90 @@
+
+=======================================================================
+ãÔßáÉ
+áãÇ ÈäÚãá ÇäÓÊæá ááßãÈæÒÑ ÈÊÙåÑ ÇáãÔßáÉ Ïí 
+- The requested PHP extension ext-intl * is missing from your system.
+æÍáåÇ
+composer install --ignore-platform-reqs
+===============================================================
+Trying to get property 'main_lang' of non-object
+Ýì åÐå ÇáÍÇáÉ íÊã Úãá ÇÏÎÇá Ýì ÞÇÚÏÉ ÇáÈíÇäÇÊ áÇäåÇ ÝÇÑÛÉ æåæ íÑíÏ ÇááÛÉ ÇáÇÓÇÓíÉ áíÚãá ÚáíåÇ
+
+================================
+ãÔßáÉ
+SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists
+ÇáÍá
+1-
+php artisan migrate:reset
+2-
+ÍÐÝ ßá ÇáÌÏÇæá Ýì ÞÇÚÏÉ ÇáÈíÇäÇÊ
+3-
+php artisan migrate
+====================
+áãÇ ÈäÚãá
+ install
+áÈáÇÌä Çæ ÇßÓÊäÔä æÌÏíÏ æíÙåÑ ÇÑæÑæ
+æíÊã Íá ÇáÇÑæÑ 
+áÇÈÏ ãä Úãá 
+composer dump-autoload
+áÊÇßíÏ ãä ÚÏã æÌæÏ ÇÑæÑ ÊÇäíÉ
+æÈÚÏíä ÈÊÈÏÇÁ ÊÍãá ÇáÍÒãÉ ãä ÌÏíÏ 
+=================
+ãÔßáÉ Çá api key
+ÇáãæÌæÏÉ Ýì ÕÝÍÉ ÇáãÕäÚíä ÈÃÓã ÚäæÇä
+ÊÙåÑ ÇáÎÑíØÉ æÝíåÇ ãÔßáÉ äÊíÌÉ 
+æáÍá åÐå ÇáãÔßáÉ áÇÈÏ ãä ÌáÈå ææÖÚå Ýì ÕÝÊí Çá
+create and edit
+ÇáÏÑÓ 42 æ43
+================================
+ÇáãÔßáÉ ÇáÇæáì
+max key length is 767 bytes
+ãÔßáÉ ÇááíäË ÚäÏ Úãá ãíÌÑÇÔä ááÌÏÇæá Ýì ÞÇÚÏÉ ÇáÈíÇäÇÊ 
+length
+
+ÇáÍá
+providders -> AppServiceProvider.php
+æåÐå ÇáãÔßáÉ ÊÙåÑ ÝÞØ ÚäÏ ÇÓÊÎÏÇã ÞÇÚÏÉ ÈíÇäÇÊ ãÇì ÇÓ ßíæ Çá
+Êã ÇÖÇÝÉ ÇáßáÇÓ
+use Illuminate\Support\Facades\Schema;
+Êã ÇÖÇÝÉ ÇááíäË Ýì ÇáÈÑæÝÇíÏÑÒ Ýì ãáÝ ÇáÇÈ ÓÑÝíÓ ÈÑæÝÇíÏÑ
+    public function boot()
+    {
+        //
+        Schema::enableForeignKeyConstraints();
+        Schema::defaultStringLength(191);
+    }
+==============================
+ÇáãÔßáÉ ÇáËÇäíÉ
+Array to string conversion
+æÏÇ Èíßæä Ýíå äÞØÉ Ýì ÇáßæÏ ÛáØ Êã ÇÓÊÈÏÇáåÇ ÈÇáÝÕáÉ 
+===================================
+ÇáãÔÔßáÉ ÇáÊÇáÊÉ
+View [admin.admins.create] not found
+ÏÇ ãÚäÇå Çä ãáÝ ÇáßÑííÊ ãÔ ãæÌæÏ Ýì ÇáÝíæ
+=======================================
+Class 'App\Http\Controllers\Admin\Storage' not found
+ÇáÍá ÅÖÇÝÉ ÇáßáÇÓ
+use Storage;
+=========================
+ãÔßáÉ 
+DataTables warning : table id = dTTableBuilder - Exception
+SQLSTATE[42s02]: Base table or view not fount
+Íá åÐå ÇáãÔßáÉ
+ÇääÇ ãÚãáäÇÔ 
+php artisan migrate
+====================
+ãÔßáÉ
+ Type error: Argument 1 passed to CreateProductsTable::
+{closure}() must be an instance of Blueprint, instance of 
+Illuminate\Database\Schema\Blueprint given
+ÇáÍá
+åæ ãÔ áÇÞì ÇáÈÑæÈÑäÊ ßáÇÓ æÈÇáÊÇáí áÇÈÏ ãä ÇÖÇÝÊå
+use Illuminate\Database\Schema\Blueprint;
+============================================
+ãÔßáÉ ÇÎÊÝÇÁ ÇáÕæÑ ÈÚÏ ãÏÉ ØæíáÉ ãä ÊÑß ÇáãÔÑæÚ
+ÇáÍá
+php artisan storage:link
+===============================
+
+
+App\Admin::create(['name'=>'admin', 'email'=>'test2@test.com', 'password'=>bcrypt(123456)])

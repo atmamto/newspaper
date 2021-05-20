@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=wrXO1KHPcA4&list=PLnZr4UsZcjFf2NemQfWKj7sQ0zyA5-v2f&index=3
+
+http://localhost/newspaper/
+
+http://localhost/newspaper/admin
